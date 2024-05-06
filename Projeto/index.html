@@ -17,6 +17,7 @@
             </form>
         </div>
         <div class="login-container">
+            <button class="cart-button">Carrinho</button>
             <button class="login-button">Login</button>
         </div>
     </header>
@@ -30,21 +31,52 @@
     <div class="title">
         <h2>Produtos em Destaque</h2>
     </div>
-    <div class="products-conteiner">
-        <div class="product"><img src="img/cadeira-removebg-preview.png" alt="produto 1"><div class="product-info"> <p>Cadeira Gamer Ergonômica StealthRacer XZ-5000</p>
-            <p>Vendido e entregue por: GamerTech | Em estoque</p>
-            <p>R$ 689,90</p>
-            <p>À vista no PIX com até 10% OFF</p</div></div></div>
-        <div class="product"><img src="img/relogio-removebg-preview.png" alt="produto 2"><div class="product-info"> <p>Relógio Digital de Pulso Elegance Gold, Resistente à Água</p>
-            <p>Vendido e entregue por: TimeMasters | Em estoque</p>
-            <p>R$ 299,90</p>
-            <p>À vista no PIX com até 10% OFF</p>
-            </div></div>
-        <div class="product"><img src="img/ferramenta-removebg-preview.png" alt="produto 3"><div class="product-info"><p>Caixa de Ferramentas Profissional MasterCraft, 180 Peças</p>
-            <p>Vendido e entregue por: FerramentasExpress | Em estoque</p>
-            <p>R$ 799,90</p>
-            <p>À vista no PIX com até 10% OFF</p>
-        </div></div>
+    <div class="products-wrapper">
+        <div class="products-container"> <!-- Renomeada de "products-conteiner" para "products-container" -->
+            <div class="product">
+                <img src="img/cadeira-removebg-preview.png" alt="produto 1">
+                <div class="product-info">
+                    <p>Cadeira Gamer Ergonômica StealthRacer XZ-5000</p>
+                    <p>Vendido e entregue por: GamerTech | Em estoque</p>
+                    <p>R$ 689,90</p>
+                    <p>À vista no PIX com até 10% OFF</p>
+                </div>
+                <div class="button-container">
+                    <button class="btn-buy">Comprar</button>
+                    <button class="btn-add-cart">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+        <div class="products-container"> <!-- Cada produto agora está dentro de sua própria div .products-container -->
+            <div class="product">
+                <img src="img/relogio-removebg-preview.png" alt="produto 2">
+                <div class="product-info">
+                    <p>Relógio Digital de Pulso Elegance Gold, Resistente à Água</p>
+                    <p>Vendido e entregue por: TimeMasters | Em estoque</p>
+                    <p>R$ 299,90</p>
+                    <p>À vista no PIX com até 10% OFF</p>
+                </div>
+                <div class="button-container">
+                    <button class="btn-buy">Comprar</button>
+                    <button class="btn-add-cart">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
+        <div class="products-container"> <!-- Outra div .products-container para o terceiro produto -->
+            <div class="product">
+                <img src="img/ferramenta-removebg-preview.png" alt="produto 3">
+                <div class="product-info">
+                    <p>Caixa de Ferramentas Profissional MasterCraft, 180 Peças</p>
+                    <p>Vendido e entregue por: FerramentasExpress | Em estoque</p>
+                    <p>R$ 799,90</p>
+                    <p>À vista no PIX com até 10% OFF</p>
+                </div>
+                <div class="button-container">
+                    <button class="btn-buy">Comprar</button>
+                    <button class="btn-add-cart">Adicionar ao carrinho</button>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>

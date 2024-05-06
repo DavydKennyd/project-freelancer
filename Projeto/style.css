@@ -31,18 +31,18 @@ body {
 }
 
 .search-form input[type="text"] {
-    padding: 5px;
+    padding: 10px 35px;
     border: none;
-    border-radius: 3px;
+    border-radius: 20px;
     margin-right: 10px;
 }
 
 .search-form button {
-    padding: 5px 10px;
+    padding: 10px 20px;
     background-color: #555;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
@@ -56,73 +56,139 @@ body {
 }
 
 .login-button {
-    padding: 5px 10px;
+    padding: 10px 20px;
     background-color: #555;
     color: #fff;
     border: none;
-    border-radius: 3px;
+    border-radius: 10px;
     cursor: pointer;
 }
 
 .login-button:hover {
     background-color: #777;
 }
+.cart-button {
+    padding: 10px 20px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 10px; /* Adiciona um espaço entre o botão "Carrinho" e o botão "Login" */
+}
+
+.cart-button:hover {
+    background-color: #777;
+}
 
 .square-container {
     display: flex;
     justify-content: center;
-    margin-top: 20px; /* Espaçamento do topo */
+    margin-top: 20px;
 }
 
 .square {
-    width: 100px; /* Largura do quadrado */
-    height: 100px; /* Altura do quadrado */
-    background-color: #555; /* Cor de fundo do quadrado */
-    margin: 0 10px; /* Espaçamento horizontal entre os quadrados */
-    border-radius: 10px; /* Arredondamento das bordas */
+    width: 100px;
+    height: 100px;
+    background-color: #555;
+    margin: 0 30px;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
 }
 
-/* Adicione a animação de pulsação quando o cursor passa por cima */
 .square:hover {
     animation: pulse 0.10s infinite alternate;
     background-color: #EBD7BF;
 }
 
-/**PARTE DAS DIV'S DE PRODUTOS E DESCRISÃO SOBRE OS PRODUTOS**/
-
-.title{
+.title {
     margin-top: 50px;
     margin-left: 60px;
 }
 
-.products-conteiner{
+.products-wrapper {
     display: flex;
-    justify-content: space-between;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right:20px ;
+    justify-content: space-between; 
+    margin-top: 20px; 
+    flex-wrap: wrap; 
 }
 
-.product {
-    width: 30%; /* Largura de cada div de produto */
+.products-container {
+    width: 30%;
+    border: 2px solid #555;
+    border-radius: 10px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin-bottom: 20px; 
+    
+}
+
+
+.products-container:first-child {
+    margin-right: 10px; 
+    margin-left: 50px; 
+}
+
+
+.products-container:last-child {
+    margin-left: 10px;
+    margin-right: 50px; 
+}
+
+.product{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+
+.product img {
+    width: 50%;
+    height: auto;
+    max-height: 200px;
+    align-items: center;
+
+}
+
+.product-info {
+    padding: 10px;
+    background-color: #f9f9f9;
+    font-size: 14px;
+}
+
+.button-container {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.product img {
-    max-width: 200px; /* Garante que a imagem ocupe toda a largura da div */
-    height: auto;
-    max-height: 200px;
-}
-.product-info{
+
+.btn-buy,
+.btn-add-cart {
+    width: 80%;
     padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-top: none;
-    font-size: 14px;
+    margin: 5px 0;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-add-cart {
+    background-color: #007bff;
+}
+
+.btn-buy:hover,
+.btn-add-cart:hover {
+    background-color: #777;
+}
+
+/* Adicione a animação de pulsação */
+@keyframes pulse {
+    50% {
+        transform: scale(1.1);
+    }
 }
