@@ -50,7 +50,7 @@ body {
     background-color: #777;
 }
 
-.login-container {
+.buttons-container {
     display: flex;
     align-items: center;
 }
@@ -184,6 +184,13 @@ body {
 .btn-buy:hover,
 .btn-add-cart:hover {
     background-color: #777;
+}
+
+footer {
+    background-color: #EBD7BF;
+    color: #060606;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Adicione a animação de pulsação */

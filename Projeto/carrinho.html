@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+    <link rel="stylesheet" href="carrinho.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container-carrinho">
+            <div class="user-info">
+                <span>Bem-vindo, <strong>Nome do Usuário</strong>!</span>
+            </div>
+            <h1>Carrinho de Compras</h1>
+            <nav>
+                <a href="index.html" class="btn-home">Ir para Página Inicial</a>
+                <button class="btn-sair">Sair</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Preço</th>
+                        <th>Quantidade</th>
+                        <th>Total</th>
+                        <th>Ação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nome do Produto</td>
+                        <td>R$ 100,00</td>
+                        <td>1</td>
+                        <td>R$ 100,00</td>
+                        <td><button>Remover</button></td>
+                    </tr>
+                    <!-- Outros produtos no carrinho podem ser adicionados aqui -->
+                </tbody>
+            </table>
+            <div class="subtotal">
+                <span>Subtotal:</span>
+                <span>R$ 100,00</span>
+            </div>
+            <div class="checkout">
+                <button>Finalizar Compra</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Minha Loja. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
